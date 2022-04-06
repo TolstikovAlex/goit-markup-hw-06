@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--  Header  -->
+
+    <header class="page-header">
+      <div class="container navigation">
+        <!-- Navigation -->
+
+        <nav class="nav">
+          <a href="/" class="logo"
+            >Web<span class="colortext-main">Studio</span></a
+          >
+          <ul class="site-nav">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="nav-link current">Портфолио</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contact-item">
+            <a href="mailto:info@devstudio.com" class="contact-info mail">
+              <div class="contact-section">
+                <svg class="icon" width="16px" height="12px">
+                  <use href="./images/icons.svg#mail"></use>
+                </svg>
+                info@devstudio.com
+              </div>
+            </a>
+          </li>
+          <li class="contact-item">
+            <a href="tel:+38096111111" class="contact-info phone">
+              <div class="contact-section">
+                <svg class="icon" width="10px" height="16px">
+                  <use href="./images/icons.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main content -->
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title visually-hidden">Наши проекты</h1>
+
+          <!--  Filter  -->
+
+          <ul class="filter">
+            <li class="filter-item">
+              <button type="button" class="filter-button">Все</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Веб-сайты</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!--  Our projects  -->
+
+          <ul class="project">
+            <li class="project-item">
+              <article class="card">
+                <a href="#" class="project-link">
+                  <div class="card-thumb">
+                    <img
+                      src="./images/project1.jpg"
+                      alt="Сайт проекта технокряк. Члены команды проекта."
+                      width="370"
+                      height="294"
+                    />
+                    <div class="card-overlay">
+                      <p class="overlay-info">
+                        Ресурс предлагает комплексные предложения с разным
+                        уровнем функционала и сервисов. Все это позволит
+                        посетителю получить исчерпывающие сведения о компании
+                        или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="project-title">Технокряк</h2>
+                    <p class="project-info">Веб-сайт</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="project-item">
+              <article class="card">
+                <a href="#" class="project-link">
+                  <div class="card-thumb">
+                    <img
+                      src="./images/project2.jpg"
+                      alt="Постер баскетбольных команд New Orleans и Golden Star."
+                      width="370"
+                      height="294"
+                    />
+                    <div class="card-overlay">
+                      <p class="overlay-info">
+                        Ресурс предлагает комплексные предложения с разным
+                        уровнем функционала и сервисов. Все это позволит
+                        посетителю получить исчерпывающие сведения о компании
+                        или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="project-title">
+                      Постер New Orlean vs Golden Star
+                    </h2>
+                    <p class="project-info">Дизайн</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="project-item">
+              <article class="card">
+                <a href="#" class="project-link">
+                  <div class="card-thumb">
+                    <img
+                      src="./images/project3.jpg"
+                      alt="Приложение ресторна Seafood. Логотип в виде рыбы с названием ресторана."
+                      width="370"
+                      height="294"
+                    />
+                    <div class="card-overlay">
+                      <p class="overlay-info">
+                        Ресурс предлагает комплексные предложения с разным
+                        уровнем функционала и сервисов. Все это позволит
+                        посетителю получить исчерпывающие сведения о компании
+                        или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="project-title">Ресторан Seafood</h2>
+                    <p class="project-info">Приложение</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="project-item">
+              <article class="card">
+                <a href="#" class="project-link">
+                  <div class="card-thumb">
+                    <img
+                      src="./images/project4.jpg"
+                      alt="Проект Prime. Черные накладные наушники."
+                      width="370"
+                      height="294"
+                    />
+                    <div class="card-overlay">
+                      <p class="overlay-info">
+                        Ресурс предлагает комплексные предложения с разным
+                        уровнем функционала и сервисов. Все это позволит
+                        посетителю получить исчерпывающие сведения о компании
+                        или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="project-title">Проект Prime</h2>
+                    <p class="project-info">Маркетинг</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="project-item">
+              <article class="card">
+                <a href="#" class="project-link">
+                  <div class="card-thumb">
+                    <img
+                      src="./images/project5.jpg"
+                      alt="Проект Boxes. Две небольшие коробки."
+                      width="370"
+                      height="294"
+                    />
+                    <div class="card-overlay">
+                      <p class="overlay-info">
+                        Ресурс предлагает комплексные предложения с разным
+                        уровнем функционала и сервисов. Все это позволит
+                        посетителю получить исчерпывающие сведения о компании
+                        или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="project-title">Проект Boxes</h2>
+                    <p class="project-info">Приложение</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="project-item">
+              <article class="card">
+                <a href="#" class="project-link">
+                  <div class="card-thumb">
+                    <img
+                      src="./images/project6.jpg"
+                      alt="Веб-сайт Inspiration has no Borders. Страница сайта в темном дизайне."
+                      width="370"
+                      height="294"
+                    />
+                    <div class="card-overlay">
+                      <p class="overlay-info">
+                        Ресурс предлагает комплексные предложения с разным
+                        уровнем функционала и сервисов. Все это позволит
+                        посетителю получить исчерпывающие сведения о компании
+                        или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="project-title">Inspiration has no Borders</h2>
+                    <p class="project-info">Веб-сайт</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+
+            <li class="project-item">
+              <article class="card">
+                <a href="#" class="project-link">
+                  <div class="card-thumb">
+                    <img
+                      src="./images/project7.jpg"
+                      alt="Издание Limited Edition. Разворот глянцевого журнала."
+                      width="370"
+                      height="294"
+                    />
+                    <div class="card-overlay">
+                      <p class="overlay-info">
+                        Ресурс предлагает комплексные предложения с разным
+                        уровнем функционала и сервисов. Все это позволит
+                        посетителю получить исчерпывающие сведения о компании
+                        или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="project-title">Издание Limited Edition</h2>
+                    <p class="project-info">Дизайн</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="project-item">
+              <article class="card">
+                <a href="#" class="project-link">
+                  <div class="card-thumb">
+                    <img
+                      src="./images/project8.jpg"
+                      alt="Проект LAB. Бирка с названием проекта."
+                      width="370"
+                      height="294"
+                    />
+                    <div class="card-overlay">
+                      <p class="overlay-info">
+                        Ресурс предлагает комплексные предложения с разным
+                        уровнем функционала и сервисов. Все это позволит
+                        посетителю получить исчерпывающие сведения о компании
+                        или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="project-title">Проект LAB</h2>
+                    <p class="project-info">Маркетинг</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li class="project-item">
+              <article class="card">
+                <a href="#" class="project-link">
+                  <div class="card-thumb">
+                    <img
+                      src="./images/project9.jpg"
+                      alt="Приложение Growing Business. Изображение главной страницы сайта."
+                      width="370"
+                      height="294"
+                    />
+                    <div class="card-overlay">
+                      <p class="overlay-info">
+                        Ресурс предлагает комплексные предложения с разным
+                        уровнем функционала и сервисов. Все это позволит
+                        посетителю получить исчерпывающие сведения о компании
+                        или частном лице.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <h2 class="project-title">Growing Business</h2>
+                    <p class="project-info">Приложение</p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--  Footer  -->
+
+    <footer class="page-footer">
+      <div class="container footer">
+        <div class="address-list">
+          <a href="/" class="logo"
+            >Web<span class="colortext-accent">Studio</span></a
+          >
+
+          <!-- Address -->
+
+          <address class="address">
+            <ul class="address-items">
+              <li class="address-item">
+                <a
+                  href="https://goo.gl/maps/kMmwReeBVjx7soe19"
+                  class="address-main"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address-item">
+                <a href="mailto:info@example.com" class="address-sub"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address-item">
+                <a href="tel:+38099111111" class="address-sub"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="network">
+          <h3 class="network-title">Присоединяйтесь</h3>
+          <ul class="network-items">
+            <li class="network-item">
+              <a href="" class="network-link">
+                <div class="network-icon">
+                  <svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="network-item">
+              <a href="" class="network-link">
+                <div class="network-icon">
+                  <svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="network-item">
+              <a href="" class="network-link">
+                <div class="network-icon">
+                  <svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="network-item">
+              <a href="" class="network-link">
+                <div class="network-icon">
+                  <svg class="" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
