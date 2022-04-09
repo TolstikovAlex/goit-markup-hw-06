@@ -691,9 +691,18 @@ p {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
+
+  /* Footer Form */
+
+
+  /* footer-submit- footer-form 
+  f-s-text - f-s-title 
+  f-s-form - footer-form-field
+  f-s-label - f-label 
+  f-s-input - inner-f-inp
+   */
 .footer-form {
   margin-left: 93px;
-  
 }
 
 .footer-form-field {
@@ -703,6 +712,7 @@ p {
 
 .footer-form-title {
   text-transform: uppercase;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -712,29 +722,38 @@ p {
 
 
 .footer-submit-button {
-  padding: 0;
-  padding-right: 10px;
-  position: relative;
-  display: inline-block;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
   min-width: 200px;
   height: 50px;
+  padding: 0;
+  padding-right: 10px;
+
+  font-size: 16px;
+  line-height: 1.87;
   font-weight: 700;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+  cursor: pointer;
+}
 
+.footer-submit-button::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(/images/icon-send.svg);
 }
-.footer-submit-icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-right: 28px;
-  transform:translateY(50%);
-  fill: var(--primary-white-color);
-}
+
 
 .footer-form-input {
   position: relative;
@@ -743,18 +762,21 @@ p {
 
 .inner-footer-input {
   padding-inline: 42px;
-  margin-right: 12px;
-  min-width: 358px;
+  margin: 0;
+  width: 358px;
   height: 50px;
   font: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
 
-.inner-footer-input:hover + .footer-label,
+
+
+/* Если E-mail- это не placeholder */
+
+/* .inner-footer-input:hover + .footer-label,
 .inner-footer-input:focus + .footer-label{
   transform: translate(-180%,-50%);
   color: var(--primary-white-color);
@@ -769,8 +791,9 @@ p {
   margin-left: 16px;
   transition: transform 250ms var(--timing-function),
   color 250ms var(--timing-function);
-  
-}
+  } */
+
+  /* End Footer Form */
 
 /* Modal */
 
@@ -892,7 +915,8 @@ p {
   transition: border-color 250ms var(--timing-function);
 }
 
-.form-input:hover {
+.form-input:hover,
+.form-input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -905,6 +929,11 @@ p {
   left: 0;
 
   transition: fill 250ms var(--timing-function)
+}
+
+.input-icon:hover,
+.input-icon:focus {
+  fill: var(--accent-color)
 }
 
 .form-input:hover ~ .input-icon,
